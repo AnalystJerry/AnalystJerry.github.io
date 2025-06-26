@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SQL Project – Maven Analytics</title>
+</head>
+<body>
+  <h1>Advanced SQL Querying: MLB Project</h1>
+  <p><strong>Course:</strong> Maven Analytics - Advanced SQL Querying (June 2025)</p>
+  <p><strong>Certification:</strong> <a href="https://certificates.mavenanalytics.io/23fcf2d4-6cb6-450d-8b86-929e77565b22" target="_blank">View Certificate</a></p>
+
+  <h2>🔍 Project Overview</h2>
+  <p>This project explores Major League Baseball (MLB) player and team data using advanced SQL techniques including:</p>
+  <ul>
+    <li>Common Table Expressions (CTEs)</li>
+    <li>Window functions</li>
+    <li>Aggregate and ranking queries</li>
+    <li>Time-based analysis</li>
+  </ul>
+
+  <h2>📊 Example Query</h2>
+  <pre>
+WITH ts AS (
+  SELECT teamID, yearID, SUM(salary) AS total_spend
+  FROM salaries
+  GROUP BY teamID, yearID
+)
+SELECT teamID, ROUND(AVG(total_spend)/1000000, 2) AS avg_spend_millions
+FROM ts
+GROUP BY teamID
+ORDER BY avg_spend_millions DESC
+LIMIT 5;
+  </pre>
+
+  <h2>📁 Key Insights</h2>
+  <ul>
+    <li>Top schools and teams producing MLB players</li>
+    <li>Top 20% of teams by salary spending</li>
+    <li>Players with longest careers</li>
+    <li>Trends in player height & weight over decades</li>
+  </ul>
+
+  <h2>🛠 Skills</h2>
+  <p>SQL, MySQL, Data Analysis, Window Functions, CTEs, Ranking</p>
+
+  <p><a href="index.html">← Back to homepage</a></p>
+</body>
+</html>
+
