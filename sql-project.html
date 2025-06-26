@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Advanced SQL Project | Analyst Jerry</title>
+  <title>Major League Baseball: Advanced SQL Insights</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -21,14 +21,14 @@
       text-align: center;
     }
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: 2rem auto;
-      padding: 1rem;
+      padding: 2rem;
       background-color: #fff;
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-    h1, h2 {
+    h1, h2, h3 {
       color: #1f2937;
     }
     .section {
@@ -36,8 +36,9 @@
     }
     .tags {
       background-color: #e5e7eb;
-      padding: 0.2rem 0.6rem;
-      margin-right: 0.5rem;
+      padding: 0.3rem 0.7rem;
+      margin-right: 0.4rem;
+      margin-bottom: 0.4rem;
       border-radius: 4px;
       font-size: 0.9rem;
       display: inline-block;
@@ -48,58 +49,114 @@
       font-size: 0.8rem;
       color: #777;
     }
+    ul {
+      padding-left: 1.2rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      text-align: left;
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    th {
+      background-color: #f3f4f6;
+    }
+    a {
+      color: #1f6feb;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Advanced SQL Querying Project</h1>
-    <p>Completed as part of the Maven Analytics Certification Course</p>
+    <h1>Major League Baseball: Advanced SQL Insights</h1>
+    <p>Built using data from the Maven Analytics SQL course</p>
   </header>
 
   <div class="container">
+
     <div class="section">
-      <h2>📅 Date</h2>
-      <p>June 2025</p>
+      <h2>📌 Excerpt</h2>
+      <p>Explored Major League Baseball datasets using advanced SQL techniques such as window functions, CTEs, and subqueries. Answered real-world analytical questions about schools producing players, team salaries, career spans, batting profiles, and player physical trends over time.</p>
     </div>
 
     <div class="section">
-      <h2>🧠 Objective</h2>
-      <p>This project showcases my ability to write advanced SQL queries, analyze large datasets, and extract meaningful insights using subqueries, CTEs, window functions, and aggregation techniques.</p>
+      <h2>📖 Description</h2>
+      <p>This project was completed as part of the <strong>Advanced SQL Querying course by Maven Analytics</strong>. It simulates realistic data challenges faced by analysts in sports, HR, or business analytics settings.</p>
+      <p>Using SQL alone, I analyzed large-scale MLB datasets to reveal insights across a range of topics including player origins, career spans, spending patterns, and more.</p>
     </div>
 
     <div class="section">
-      <h2>🛠 Tools Used</h2>
-      <span class="tags">SQL</span>
-      <span class="tags">MySQL</span>
-      <span class="tags">Window Functions</span>
-      <span class="tags">CTEs</span>
+      <h2>🔍 Dataset Overview</h2>
+      <table>
+        <tr><th>Source</th><td>Maven Analytics MLB Dataset</td></tr>
+        <tr><th>Time Span</th><td>1871–2016 (145 years)</td></tr>
+        <tr><th>Tables Used</th><td>players, salaries, schools, school_details</td></tr>
+        <tr><th>Total Records</th><td>players (~19k), salaries (~260k), schools (~9k)</td></tr>
+        <tr><th>Main Features</th><td>playerID, teamID, salary, birth date, debut, batting hand, schoolID, height, weight</td></tr>
+      </table>
     </div>
 
     <div class="section">
-      <h2>📊 Project Overview</h2>
+      <h2>📊 Key Questions Answered</h2>
+      <h3>🏫 Schools & Player Origins</h3>
       <ul>
-        <li>Analyzed MLB player data to identify trends in school performance and player career spans</li>
-        <li>Calculated team-level cumulative salary spend and identified top spending teams</li>
-        <li>Used CTEs and window functions to create decade-level summaries of physical stats</li>
-        <li>Explored batting behavior and demographics across teams and time</li>
+        <li>How many schools produced MLB players by decade?</li>
+        <li>Top 5 schools that produced the most players overall</li>
+        <li>Top 3 schools per decade</li>
+      </ul>
+
+      <h3>💸 Team Spending Patterns</h3>
+      <ul>
+        <li>Top 20% of teams by average salary spending</li>
+        <li>Cumulative team spending over time</li>
+        <li>First year each team crossed $1B in total spend</li>
+      </ul>
+
+      <h3>⚾ Player Career Analysis</h3>
+      <ul>
+        <li>Age at debut and retirement for each player</li>
+        <li>Players with the longest careers</li>
+        <li>Players who stayed with the same team for over 10 years</li>
+      </ul>
+
+      <h3>🎉 Fun & Demographic Insights</h3>
+      <ul>
+        <li>Players who share the same birthday</li>
+        <li>Team-wise batting style breakdown: left, right, both</li>
+        <li>Changes in player height and weight over decades</li>
       </ul>
     </div>
 
     <div class="section">
-      <h2>📎 Certification</h2>
-      <p><a href="https://certificates.mavenanalytics.io/23fcf2d4-6cb6-450d-8b86-929e77565b22" target="_blank">View Certificate</a></p>
+      <h2>🧪 Techniques Used</h2>
+      <span class="tags">SQL</span>
+      <span class="tags">Window Functions</span>
+      <span class="tags">CTEs</span>
+      <span class="tags">Subqueries</span>
+      <span class="tags">Joins</span>
+      <span class="tags">Aggregations</span>
+      <span class="tags">Data Exploration</span>
+      <span class="tags">Sports Analytics</span>
     </div>
 
     <div class="section">
-      <h2>📁 Code & Queries</h2>
-      <p>All SQL queries are available in the GitHub repository: <br>
-        <a href="https://github.com/AnalystJerry/SQL-Project" target="_blank">View SQL Project Code</a>
-      </p>
+      <h2>📎 Certification</h2>
+      <p><a href="https://certificates.mavenanalytics.io/23fcf2d4-6cb6-450d-8b86-929e77565b22" target="_blank">View Certification</a></p>
+    </div>
+
+    <div class="section">
+      <h2>📁 GitHub Code</h2>
+      <p>All SQL queries for this project are available in the GitHub repo: <br>
+      <a href="https://github.com/AnalystJerry/SQL-Project" target="_blank">🔗 View Project Code</a></p>
     </div>
   </div>
 
   <footer>
-    &copy; 2025 Analyst Jerry. All rights reserved.
+    &copy; 2025 Analyst Jerry · Built with 💻 and ☕
   </footer>
 </body>
 </html>
