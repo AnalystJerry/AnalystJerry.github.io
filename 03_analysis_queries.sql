@@ -1,4 +1,4 @@
--- For final project
+-- Major League Baseball analysis project
 select *
 from players
 limit 5;
