@@ -1,3 +1,49 @@
+#Major League Baseball Analysis
+📌 Excerpt
+Explored Major League Baseball datasets using advanced SQL techniques such as window functions, CTEs, and subqueries.
+Answered real-world analytical questions about schools producing players, team salaries, career spans, 
+batting profiles, and player physical trends over time.
+
+📖 Description
+This project was built using advanced SQL concepts to extract insights from Major League Baseball datasets. 
+Key analysis areas include:
+Trends in MLB player origins by school and decade
+Team salary spending patterns and cumulative trends
+Player career analysis: age at debut and retirement, longest careers, team loyalty
+TDemographic insights like batting styles, shared birthdays, and changes in player physical attributes over time
+
+🔍 Dataset Overview
+Source	Maven Analytics MLB Dataset
+Time Span	1871–2016 (145 years)
+Tables Used	players, salaries, schools, school_details
+Total Records	players (~19k), salaries (~260k), schools (~9k)
+Main Features	playerID, teamID, salary, birth date, debut, batting hand, schoolID, height, weight
+	
+📊 Key Questions Answered
+	
+🏫 Schools & Player Origins
+How many schools produced MLB players by decade?
+Top 5 schools that produced the most players overall
+Top 3 schools per decade
+	
+💸 Team Spending Patterns
+Top 20% of teams by average salary spending
+Cumulative team spending over time
+First year each team crossed $1B in total spend
+	
+⚾ Player Career Analysis
+Age at debut and retirement for each player
+Players with the longest careers
+Players who stayed with the same team for over 10 years
+🎉 Fun & Demographic Insights
+
+Players who share the same birthday
+Team-wise batting style breakdown: left, right, both
+Changes in player height and weight over decades
+	
+🧪 Techniques Used
+SQL Window Functions CTEs Subqueries Joins Aggregations Data Exploration Sports Analytics
+
 -- Major League Baseball analysis project
 select *
 from players
